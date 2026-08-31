@@ -5,8 +5,14 @@ function Navbar() {
     <header className="navbar">
       <div className="container navbar-inner">
         <a href="#" className="brand">
-          Finn Digital
-        </a>
+            <img
+                src="/finn-digital-icon.png"
+                alt="Finn Digital logo"
+                className="brand-logo"
+            />
+
+            <span>Finn Digital</span>
+        </a> 
 
         <nav className="nav-links">
           <a href="#work">Work</a>
