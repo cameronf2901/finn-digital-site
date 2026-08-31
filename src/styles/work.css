@@ -136,3 +136,9 @@
   border-bottom: 1px solid var(--accent);
   padding-bottom: 3px;
 }
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+}
