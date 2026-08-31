@@ -1,0 +1,129 @@
+.work {
+  padding: 110px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.work-heading {
+  max-width: 760px;
+  margin-bottom: 65px;
+}
+
+.work-heading h2 {
+  font-size: clamp(2.4rem, 4vw, 4.2rem);
+  line-height: 1.05;
+  letter-spacing: -0.045em;
+  font-weight: 600;
+}
+
+.featured-project {
+  display: grid;
+  grid-template-columns: 1.35fr 0.8fr;
+  gap: 55px;
+  align-items: stretch;
+}
+
+.project-visual {
+  min-height: 520px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 28px;
+}
+
+.project-placeholder {
+  height: 100%;
+  min-height: 460px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 35px;
+  background: var(--accent);
+  color: white;
+}
+
+.project-placeholder span {
+  margin-bottom: auto;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.75;
+}
+
+.project-placeholder strong {
+  font-size: clamp(2.8rem, 5vw, 5.5rem);
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+  font-weight: 500;
+}
+
+.project-placeholder small {
+  margin-top: 14px;
+  font-size: 1rem;
+  opacity: 0.75;
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.project-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-bottom: 30px;
+}
+
+.project-meta span {
+  padding: 6px 10px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.project-info h3 {
+  font-size: 2rem;
+  letter-spacing: -0.03em;
+  margin-bottom: 15px;
+}
+
+.project-info > p {
+  color: var(--muted);
+  line-height: 1.7;
+  max-width: 470px;
+}
+
+.project-goals {
+  display: flex;
+  flex-direction: column;
+  margin-top: 35px;
+  border-top: 1px solid var(--border);
+}
+
+.project-goals span {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.9rem;
+}
+
+.project-status {
+  margin-top: 28px;
+  color: var(--accent);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+@media (max-width: 850px) {
+  .featured-project {
+    grid-template-columns: 1fr;
+  }
+
+  .project-visual {
+    min-height: 400px;
+  }
+
+  .project-placeholder {
+    min-height: 340px;
+  }
+}

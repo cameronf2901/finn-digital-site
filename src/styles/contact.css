@@ -1,0 +1,28 @@
+.contact {
+  padding: 120px 0;
+}
+
+.contact-inner {
+  max-width: 850px;
+}
+
+.contact h2 {
+  font-size: clamp(2.8rem, 5vw, 5.5rem);
+  line-height: 1;
+  letter-spacing: -0.05em;
+  font-weight: 600;
+}
+
+.contact p {
+  margin-top: 24px;
+  color: var(--muted);
+  font-size: 1.1rem;
+}
+
+.contact-button {
+  display: inline-block;
+  margin-top: 35px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--text);
+  font-weight: 600;
+}

@@ -1,0 +1,74 @@
+.what-i-do {
+  padding: 110px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.what-i-do-heading {
+  max-width: 900px;
+  margin-bottom: 70px;
+}
+
+.what-i-do-heading h2 {
+  font-size: clamp(2.4rem, 4vw, 4.2rem);
+  line-height: 1.05;
+  letter-spacing: -0.045em;
+  font-weight: 600;
+}
+
+.what-i-do-list {
+  border-top: 1px solid var(--text);
+}
+
+.what-i-do-item {
+  display: grid;
+  grid-template-columns: 70px 1fr 1fr;
+  gap: 40px;
+  padding: 34px 0;
+  border-bottom: 1px solid var(--border);
+  transition: padding-left 0.25s ease;
+}
+
+.what-i-do-item:hover {
+  padding-left: 10px;
+}
+
+.what-i-do-number {
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.what-i-do-main h3 {
+  font-size: 1.55rem;
+  font-weight: 600;
+}
+
+.service-tagline {
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+.service-points {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.service-points span {
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 800px) {
+  .what-i-do-item {
+    grid-template-columns: 45px 1fr;
+  }
+
+  .service-points {
+    grid-column: 2;
+    margin-top: 10px;
+  }
+}

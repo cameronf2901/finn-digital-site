@@ -1,0 +1,88 @@
+.pricing {
+  padding: 110px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.pricing-heading {
+  max-width: 760px;
+  margin-bottom: 60px;
+}
+
+.pricing-heading h2 {
+  font-size: clamp(2.4rem, 4vw, 4.2rem);
+  line-height: 1.05;
+  letter-spacing: -0.045em;
+  font-weight: 600;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid var(--text);
+}
+
+.pricing-item {
+  padding: 30px;
+  border-right: 1px solid var(--border);
+}
+
+.pricing-item:first-child {
+  padding-left: 0;
+}
+
+.pricing-item:last-child {
+  border-right: 0;
+}
+
+.pricing-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 20px;
+}
+
+.pricing-top h3 {
+  font-size: 1.5rem;
+}
+
+.pricing-top span {
+  color: var(--accent);
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.pricing-item > p {
+  margin-top: 14px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.pricing-item ul {
+  list-style: none;
+  margin-top: 28px;
+}
+
+.pricing-item li {
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.9rem;
+}
+
+.pricing-item a {
+  display: inline-block;
+  margin-top: 28px;
+  font-weight: 600;
+  border-bottom: 1px solid var(--text);
+}
+
+@media (max-width: 850px) {
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing-item {
+    padding: 28px 0;
+    border-right: 0;
+    border-bottom: 1px solid var(--border);
+  }
+}

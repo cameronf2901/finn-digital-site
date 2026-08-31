@@ -1,0 +1,47 @@
+.about {
+  padding: 110px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 0.8fr;
+  gap: 90px;
+}
+
+.about h2 {
+  max-width: 700px;
+  font-size: clamp(2.4rem, 4vw, 4.2rem);
+  line-height: 1.05;
+  letter-spacing: -0.045em;
+  font-weight: 600;
+}
+
+.about-copy {
+  padding-top: 35px;
+}
+
+.about-copy p {
+  color: var(--muted);
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.about-details {
+  display: flex;
+  flex-direction: column;
+  margin-top: 35px;
+  border-top: 1px solid var(--border);
+}
+
+.about-details span {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+@media (max-width: 850px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}

@@ -1,0 +1,18 @@
+.footer {
+  border-top: 1px solid var(--border);
+  padding: 24px 0;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 650px) {
+  .footer-inner {
+    flex-direction: column;
+  }
+}
