@@ -1,4 +1,5 @@
 import '../styles/work.css';
+import oakEmberPreview from '../assets/images/example.png';
 
 function Work() {
   return (
@@ -12,12 +13,13 @@ function Work() {
 
         <article className="featured-project">
           <div className="project-visual">
-            <div className="project-placeholder">
-              <span>Concept 001</span>
-              <strong>Oak & Ember</strong>
-              <small>Independent café concept</small>
-            </div>
+            <img
+                src={oakEmberPreview}
+                alt="Oak and Ember café website concept"
+                className="project-preview"
+            />
           </div>
+        
 
           <div className="project-info">
             <div className="project-meta">
@@ -29,9 +31,11 @@ function Work() {
             <h3>Oak & Ember</h3>
 
             <p>
-              A fictional café website concept designed around clear menus,
-              opening hours, location details and a strong mobile experience.
+            A fictional café concept designed and built from scratch to demonstrate
+            responsive layout, menu presentation, brand storytelling and local-business
+            contact information.
             </p>
+
 
             <div className="project-goals">
               <span>01 — Clear menu access</span>
@@ -39,9 +43,14 @@ function Work() {
               <span>03 — Easy directions & contact</span>
             </div>
 
-            <span className="project-status">
-              Full concept coming soon
-            </span>
+            <a 
+                href="https://oak-and-ember-one.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+                className="project-link"
+                >
+                View live project →
+            </a>
           </div>
         </article>
       </div>

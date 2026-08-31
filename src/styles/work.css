@@ -127,3 +127,12 @@
     min-height: 340px;
   }
 }
+
+.project-link {
+  display: inline-block;
+  margin-top: 28px;
+  color: var(--accent);
+  font-weight: 700;
+  border-bottom: 1px solid var(--accent);
+  padding-bottom: 3px;
+}
